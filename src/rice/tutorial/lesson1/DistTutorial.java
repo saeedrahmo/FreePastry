@@ -104,11 +104,15 @@ public class DistTutorial {
     
     try {
       // the port to use locally
-      int bindport = Integer.parseInt(args[0]);
+      int bindport = 9001;
+//      int bindport = Integer.parseInt(args[0]);
       
       // build the bootaddress from the command line args
-      InetAddress bootaddr = InetAddress.getByName(args[1]);
-      int bootport = Integer.parseInt(args[2]);
+      InetAddress bootaddr = InetAddress.getByName("204.19.190.101");
+      int bootport = 9001;
+//      InetAddress bootaddr = InetAddress.getByName(args[1]);
+//      int bootport = Integer.parseInt(args[2]);
+
       InetSocketAddress bootaddress = new InetSocketAddress(bootaddr,bootport);
   
       // launch our node!

@@ -52,7 +52,7 @@ import rice.p2p.scribe.Topic;
  * @author Jeff Hoye
  *
  */
-public interface JavaScribe extends BaseScribe {
+public interface  JavaScribe extends BaseScribe {
   // ***************** Membership functions messages **************
   /**
    * Subscribes the given client to the provided topic.  Any message published

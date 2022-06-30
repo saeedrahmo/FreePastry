@@ -100,7 +100,8 @@ public class MyScribeClient implements ScribeClient, Application {
     this.endpoint = node.buildEndpoint(this, "myinstance");
 
     // construct Scribe
-    myScribe = new ScribeImpl(node,"myScribeInstance");
+//    myScribe = new ScribeImpl(node,"myScribeInstance");
+    myScribe = new ScribeImpl(node,"sss");
 
     // construct the topic
     myTopic = new Topic(new PastryIdFactory(node.getEnvironment()), "example topic");
