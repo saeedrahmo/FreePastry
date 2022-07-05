@@ -163,6 +163,7 @@ public interface ScribePolicy {
     public DefaultScribePolicy(Environment env) {
       environment = env;
     }
+
     /**
      * If you don't override the deprecated allowSubscribe(), This method always return true;
      *
